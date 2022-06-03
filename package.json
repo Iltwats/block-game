@@ -1,10 +1,24 @@
 {
-  "name": "github-games",
+  "name": "block-game",
   "repository": {
     "type": "git",
-    "url": "https://github.com/brianamarie/github-games.git"
+    "url": "https://github.com/Iltwats/block-game.git"
   },
   "description": "Simple JS game",
-  "author": "https://twitter.com/brianamarie",
-  "version": "1.0.0"
+  "author": "https://github.com/Iltwats/",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "deploy": "gatsby build && gh-pages -d public -b deployment"
+  },
+  "dependencies": {
+    "gatsby": "^4.15.2"
+  }
 }
